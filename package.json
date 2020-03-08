@@ -1,0 +1,19 @@
+{
+  "name": "primeirosPassos",
+  "version": "1.0.0",
+  "description": "Primeiros passos em IC utilizando TS",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.ts"
+  },
+  "devDependencies": {
+    "sucrase": "^3.12.1",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}
