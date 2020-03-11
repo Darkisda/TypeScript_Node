@@ -1,24 +1,11 @@
-class Student {
-  fullName: string;
-  constructor(
-    public firstName: string,
-    public middleInitial: string,
-    public lastName: string
-  ) {
-    this.fullName = firstName + " " + middleInitial + " " + lastName;
-  }
-}
-  
-interface Person {
-  firstName: string;
-  middleInitial: string;
-  lastName: string;
-}
-  
-function greeter(person: Person) {
-  return "Hello, " + person.firstName + " " + person.middleInitial + " " + person.lastName;
-}
-  
-let user = new Student("Luan", "de Souza", "Nascimento");
+import BuscaEmLargura from './BuscaEmLargura'
 
-console.log(greeter(user))
+let buscaEmLargura = new BuscaEmLargura()
+
+console.log("Hello There :)")
+
+let arrayString: string[][] = [['1','2','3'],['4','5','6']]
+
+//buscaEmLargura.buscar(arrayString, 2, 3, 4, 5)
+
+buscaEmLargura.inicializar()
