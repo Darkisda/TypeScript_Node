@@ -52,3 +52,12 @@ No arquivo *package.json* altere a seguinte linha:
 "scripts": {
     "dev": "nodemon src/index.ts"
   },
+
+
+### Scanf
+Para a entrada de informações por meio do console rode:
+`yarn add scanf`
+
+### Filas
+Para facilitar a busca em largura
+`yarn add queue-typescript`
