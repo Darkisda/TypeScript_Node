@@ -1,11 +1,32 @@
-import BuscaEmLargura from './BuscaEmLargura'
+import BuscaEmProfundidade from './BuscaEmProfundidade'
 
-let buscaEmLargura = new BuscaEmLargura()
+import Pair from './Pair'
+
+let buscaEmProfundidade = new BuscaEmProfundidade()
 
 console.log("Hello There :)")
 
-let arrayString: string[][] = [['1','2','3'],['4','5','6']]
+let inicio: Pair<number, number>
+let final: Pair<number, number>
 
-//buscaEmLargura.buscar(arrayString, 2, 3, 4, 5)
+inicio = {
+    x: 0,
+    y: 1
+}
 
-buscaEmLargura.inicializar()
+final = {
+    x: 6,
+    y: 5
+}
+
+let arrayString: string[][] = [
+    ['#','$','#','#','#','#','#'],
+    ['#','0','#','#','#','#','#'],
+    ['#','0','#','#','#','#','#'],
+    ['#','0','#','#','#','#','#'],
+    ['#','0','#','#','#','#','#'],
+    ['#','0','0','0','0','0','#'],
+    ['#','#','#','#','#','_','#'],
+]
+
+buscaEmProfundidade.buscar(arrayString, inicio, final)
